@@ -1,7 +1,9 @@
-function todaysProverb(name) {
-  return "Today's proverb is: " + name
+function newestProverb(proverb) {
+  console.log(proverb)
 }
 
-let message = todaysProverb("Wer dich vemisst, wird anrufen.")
+function getProverb(sentence, callback) {
+  callback("Today's proverb is: " + sentence)
+}
 
-console.log(message)
+getProverb("Wer dich vemisst, wird anrufen.", newestProverb)
