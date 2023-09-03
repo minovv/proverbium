@@ -64,6 +64,11 @@ let proverbArray = [
     sentence: "Reibung erzeugt Wärme.",
     points: 1,
   },
+  {
+    id: 7,
+    sentence: "Wer zuerst kommt, mahlt zuerst.",
+    points: 1,
+  },
 ]
 
 let proverbCount = proverbArray.reduce((sum, item) => {
@@ -71,3 +76,15 @@ let proverbCount = proverbArray.reduce((sum, item) => {
 }, 0)
 
 console.log("Total proverbs count: " + proverbCount)
+
+let proverbFilter = proverbArray.filter((points) => {
+  return (points = 1)
+})
+
+console.log(proverbFilter)
+
+let proverbFind = proverbArray.find((string) => {
+  return string.id > 4
+})
+
+console.log(proverbFind)
