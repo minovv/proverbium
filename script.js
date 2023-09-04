@@ -69,6 +69,11 @@ let proverbArray = [
     sentence: "Wer zuerst kommt, mahlt zuerst.",
     points: 1,
   },
+  {
+    id: 8,
+    sentence: "Wer nicht wagt, der nicht gewinnt.",
+    points: 1,
+  },
 ]
 
 let proverbCount = proverbArray.reduce((sum, item) => {
@@ -77,14 +82,54 @@ let proverbCount = proverbArray.reduce((sum, item) => {
 
 console.log("Total proverbs count: " + proverbCount)
 
-let proverbFilter = proverbArray.filter((points) => {
-  return (points = 1)
+let proverbFilter = proverbArray.filter((string) => {
+  return string.id > 0
 })
 
 console.log(proverbFilter)
 
 let proverbFind = proverbArray.find((string) => {
-  return string.id > 4
+  return string.id > 5
 })
 
 console.log(proverbFind)
+
+let proverbSome = proverbArray.some((string) => {
+  return (string.id = 3)
+})
+
+console.log(proverbSome)
+
+class Proverb {
+  constructor(sentence, language) {
+    this.sentence = sentence
+    this.language = language
+  }
+
+  printProverb() {
+    console.log(this.sentence)
+  }
+}
+
+let proverb = new Proverb(
+  "Wer zu spät kommt, den bestraft das Leben.",
+  "German"
+)
+
+let proverb7 = new Proverb("Wer nicht wagt, der nicht gewinnt.", "German")
+
+proverb7.printProverb()
+
+console.log(document.documentElement)
+
+const h1 = document.getElementById("h1")
+
+h1.style.color = "black"
+
+const divProverb = document.getElementsByClassName("proverb")
+
+const divProverbWithArray = Array.from(divProverb)
+
+divProverbWithArray.forEach((div) => {
+  div.style.color = "grey"
+})
