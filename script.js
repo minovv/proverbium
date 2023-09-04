@@ -133,3 +133,11 @@ const divProverbWithArray = Array.from(divProverb)
 divProverbWithArray.forEach((div) => {
   div.style.color = "grey"
 })
+
+const form = document.querySelector("[data-form]")
+const link = document.querySelector("[data-url]")
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault()
+  console.log("submitted form")
+})
