@@ -74,6 +74,11 @@ let proverbArray = [
     sentence: "Wer nicht wagt, der nicht gewinnt.",
     points: 1,
   },
+  {
+    id: 9,
+    sentence: "Wer anderen eine Grube gräbt, fällt selbst hinein.",
+    points: 1,
+  },
 ]
 
 let proverbCount = proverbArray.reduce((sum, item) => {
