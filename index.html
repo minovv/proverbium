@@ -4,42 +4,59 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Proverbium: Memorise new proverbs and idioms while learning a foreign language</title>
+	<link rel="stylesheet" href="style.css">
 	<script src="script.js" defer></script>
 </head>
 <body>
 	<h1 id="h1">Proverbium</h1>
 	<h2>Memorise new proverbs and idioms while learning a foreign language</h2>
-	<form data-form>
-		<input data-input-text type="text" placeholder="What new proverb did you learn today?"/>
+	
+	<form data-form id="proverb-form">
+		<input data-input-text id="proverb-input" type="text" placeholder="What new proverb did you learn today?"/>
 		<button data-btn type="submit">Submit</button>
 	</form>
 	<div><a data-url href="https://www.google.com/search?q=german+proverbs" target="_blank" title="Edit your search to find proverbs in the language you are learning" >Search Google for more proverbs</a></div>
-	<div class="proverb">
-		<p>Wer anderen eine Grube gräbt, fällt selbst hinein.</p>
+	<br>
+	<div id="proverb-block">
+		<div id="newest-proverb">
+			<h3>Newest Proverbs</h3>			
+		</div>
+		
+		<div id="top-proverbs">
+			<h4>Top Proverbs</h3>
+				<div class="proverb">
+					<p>Wer nicht wagt, der nicht gewinnt.</p>
+				</div>
+				<div class="proverb">
+					<p>Wer zuerst kommt, mahlt zuerst.</p>
+				</div>
+				<div class="proverb">
+					<p>Reibung erzeugt Wärme.</p>
+				</div>
+			</div>
+			
+		<div id="all-proverbs">
+			<h5>All Proverbs</h3>
+			<div class="proverb">
+				<p>Wer nicht hören will, muss fühlen.</p>
+			</div>
+			<div class="proverb">
+				<p>Für Geld und gute Worte kann man alles haben.</p>
+			</div>
+			<div class="proverb">
+				<p>Die Lüge hat zwar kurze Beine, rennt aber schneller als die Wahrheit.</p>
+			</div>
+			<div class="proverb">
+				<p>Wer dich vermisst, wird anrufen.<br>Wer dich will, sagt es.
+					<br>Wer Interesse hat, zeigt es.</p>
+			</div>
+			<div class="proverb">
+				<p>Es ist noch kein Meister vom Himmel gefallen.</p>
+			</div>
+			<div class="proverb">
+				<p>Morgenstund hat Gold im Mund.</p>
+		</div>
+		</div>
 	</div>
-	<div class="proverb">
-		<p>Wer nicht wagt, der nicht gewinnt.</p>
-	</div>
-	<div class="proverb">
-		<p>Wer zuerst kommt, mahlt zuerst.</p>
-	</div>
-	<div class="proverb">
-		<p>Reibung erzeugt Wärme.</p>
-	</div>
-	<div class="proverb">
-		<p>Wer nicht hören will, muss fühlen.</p>
-	</div>
-	<div class="proverb">
-		<p>Für Geld und gute Worte kann man alles haben.</p>
-	<div class="proverb">
-		<p>Die Lüge hat zwar kurze Beine, rennt aber schneller als die Wahrheit.</p>
-	</div>
-	<div class="proverb">
-		<p>Wer dich vermisst, wird anrufen.<br>Wer dich will, sagt es.
-			<br>Wer Interesse hat, zeigt es.</p>
-	</div>
-	<div class="proverb">
-		<p>Es ist noch kein Meister vom Himmel gefallen.</p>
-	</div>	
 </body>
 </html>
