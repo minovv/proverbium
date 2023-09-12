@@ -2,6 +2,7 @@
 const form = document.querySelector("#proverb-form")
 const list = document.querySelector("#newest-proverb")
 const input = document.querySelector("#proverb-input")
+const errorMessages = []
 
 // 2. When I submit the form add a new element
 form.addEventListener("submit", (event) => {
