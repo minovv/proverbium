@@ -1,5 +1,11 @@
+.options {
+	display: none;
+}
+
 .newest-proverb {
 	cursor: pointer;
+	display: block;
+	font-style: italic;
   }
   
   .newest-proverb:hover {
